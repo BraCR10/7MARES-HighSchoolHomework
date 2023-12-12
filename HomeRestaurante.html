@@ -1,0 +1,67 @@
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="StyleHome.css">
+    <script src="https://kit.fontawesome.com/c924af43d3.js" crossorigin="anonymous"></script>
+    <title>Restaurante- Siete Mares</title>
+</head>
+<body>
+<!-- El div con el id=Cont se encarga de contener dentro de un cuadro toda la pagina -->
+    <div id="Cont">
+<!-- Esta es la barra superios donde esta el logo,inicio,menu y contactos -->
+        <div id="BarraSuperior">
+            <ul class="ListaBarra">
+                <li><img src="Logo.png" alt="Logo" id="ImgLogo" class="IconosEspeciales" > </li>
+                <li><i class="fas fa-home"  id="IconoCasa"></i></li>
+                <li><a href="HomeRestaurante.html" style="text-decoration: none;"><h3 class="IconosEspeciales" >Inicio</h3></a></li>
+                <li><a href="http://www.el7mares.com/menu"style="text-decoration: none;"><h3 class="IconosBarra" >Menu</h3></a></li>
+                <li> <a href="#Contacto" style="text-decoration: none;"><H3 class="IconosBarra"  >Contacto</H3></a></li>
+            </ul>
+        </div>
+<!-- Espacio para el Banner-->
+        <div class="Banner">
+
+        </div>
+<!-- Titulo de la pagina -->
+        <div id="Titulo">
+            <h1>Bienvenido a Restaurante Siete Mares </h1>
+        </div>
+<!-- Configuracion de los bloques con el menu y la ofertas -->
+        <div class="BloquesMedio" >
+           <a href="http://www.el7mares.com/menu"> <img src="Menu.png" id="ImgMenu"></a>
+        </div>
+<!-- En este caso la clase se usa para la configuracion de los estilos en CSS-->
+<!-- El id se utiliza para la configuracion en JS para hacer una emergente-->
+        <div class="BloquesMedio" id="Ofertas" >
+            <h1 >Ofertas</h1>
+        </div>
+<!-- Configuracion del Footer -->
+        <div class="Footer">
+            <div class="BloquesFooter">
+                <h1>Informacion</h1>
+                <p>Somos un restaurante al aire libre ubicado en Playa Cacao directamente frente a Golifto, Costa Rica. Somos especialistas en mariscos y platos típicos. Apto para niños, traiga un traje y nade después de la comida. Se habla inglés y español.</p>
+            </div>
+
+            <div class="BloquesFooter">
+                <a name='Contacto'></a><h1>Contactos</h1>
+                <p>Telefono: 8826 6963</p>
+                <p>WhatsApp: 8826 6963</p>
+                <p>Facebook:@SieteMaresPlayaCacao  </p>
+                <p>Correo:sietemaresgolfito@gmail.com</p>
+            </div>
+        </div>
+    </div>
+<!-- Configuracion de la emergente de ofertas-->
+<!-- Los id son utilizados para la configuracion en JS-->
+<!-- Las clase son utilizadas para los estilos en CSS-->
+    <div class="FondoEmergente " id="FondoEmergente">
+        <div class="Emergente" >
+            <a href="#"id="CerrarEmergente" class="CerrarEmergente"><i class="fas fa-times" ></i></a>
+            <h1>¡Promociones actuales!</h1>
+            <img src="Promo.jpg" alt="" id="ImgPromo">
+        </div>
+    </div>
+<!-- Este es el link para vincular la configuracion del apartado de ofertas echo en JS-->
+    <script src="Ofertas.js"></script>
+</body>
+</html>

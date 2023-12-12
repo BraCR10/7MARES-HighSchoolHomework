@@ -1,0 +1,193 @@
+/* Contenedor */
+#Cont{
+    width: 1320px;
+    height: 2330px;
+    border: 2px solid black;
+    background-image: url('FondoCont.png');
+    margin: 0px auto;
+
+}
+/* Configuracion de la barra superior */
+#BarraSuperior{
+    background-color: rgb(136, 37, 37);
+    color: white;
+    height: 100px;
+}
+.ListaBarra{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.ListaBarra li {
+    display: inline-block;
+
+}
+
+.ListaBarra .IconosBarra{
+    padding-left: 150px;
+    margin-top: 1px;
+    color: white;
+}
+
+.ListaBarra .IconosEspeciales{
+    padding-left: 0px;
+    margin-top: 1px;
+    color: white;
+}
+.ListaBarra .IconosBarra:hover{
+    text-shadow: 10px 10px 10px black;
+}
+.ListaBarra .IconEspecia:hover{
+    text-shadow: 10px 10px 10px black;
+}
+
+#IconoCasa{
+    padding-left: 150px;
+    margin-top: 1px;
+}
+
+#ImgLogo{
+    width: 80px;
+    float: left;
+}
+
+/* Banner */
+.Banner{
+    width: 1200px;
+    height: 600px;
+    border: 13px solid red;
+    border-radius: 30px;
+    margin: 10px auto;
+    animation: Baner 6s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Baner {
+    0%  , 30%{
+        background-image: url("plato-mariscos.jpg");
+        background-size: 1200px 600px;
+        background-repeat: no-repeat;
+    }
+    35% , 65%{
+        background-image: url("Trucha.jpg");
+        background-size: 1200px 600px;
+        background-repeat: no-repeat;
+    }
+    70% , 100%{
+        background-image: url("paella-marisco.jpg");
+        background-size: 1200px 600px;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Titulo */
+#Titulo{
+    text-align: center;
+    color: rgb(2, 2, 2);
+    text-shadow: 10px 10px 10px red;
+    font-size: 50px;
+}
+
+/* Bloque de ofertas y menu*/
+.BloquesMedio{
+    width: 500px;
+    height: 700px;
+    border: 10px solid red;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    padding: 0px;
+    float: left;
+   
+}
+/* Fondo del menu */
+#ImgMenu{
+    width: 500px;
+    height: 700px;
+
+}
+
+/* Fondo de ofertas*/
+#Ofertas{
+    background-image: url('Ofertas.jpg');
+    background-size: 400px 500px;
+    text-align: center;
+    font-size: 75px;
+    
+}
+
+#Ofertas h1{
+    margin-top: 310px;
+    color: white;
+    text-shadow: 10px 10px 10px red;
+}
+
+.BloquesMedio:hover{
+    opacity: .4;
+    transition: opacity 2s;
+}
+
+/* Bloque del footer */
+.Footer{
+    float: left;
+    width: 1320px;
+    height: 475px;
+    background-color: rgb(136, 37, 37);
+}
+.BloquesFooter{
+    float: left;
+    width: 610px;
+    height: 420px;
+    border: 3px solid rgb(63, 59, 59);
+    margin: 20px;
+    text-align: center;
+    font-size: 31px;
+}
+
+/* Emergente */
+/* Si JS no activa la emergente pasa escondida*/
+.FondoEmergente{
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility:hidden ;
+}
+/* Ocurre cuando el archivo JS lo activa*/
+.FondoEmergente.activo{
+    visibility: visible;
+}
+.Emergente{
+    background-image: url('FondoCont.png');
+    border-radius: 20px;
+    font-family: sans-serif;
+    padding: 30px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 10px 10px 10px red;
+}
+.CerrarEmergente{
+    display: block;
+    text-align: right;
+    color: black;
+}
+.CerrarEmergente:hover{
+    color: cornflowerblue;
+}
+.Emergente h2{
+    margin-bottom: 20px;
+}
+
+#ImgPromo{
+    width: 400;
+}
