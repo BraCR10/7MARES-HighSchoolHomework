@@ -54,4 +54,4 @@ jobs:
           app-name: '7Mares'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4111B035F11E4D9B93FC74E1EF010BBE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_49147F3BB0914C7F917D2488F2A23C80 }}
